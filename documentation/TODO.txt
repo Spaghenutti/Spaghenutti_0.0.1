@@ -11,8 +11,44 @@ Before new playthrough
 
 TODO for 0.4.0
 
+Fix buildings
+  - split usecases of greenhouse and agricultural tower.
+    - have agricultural towers in space ship
+  - add assembling machines in space ship
+
+New buildings
+  - fabricator tier 1, 2 and 3 use graphics from assembling machine of factorio 2.0
+    - used for intermediates
+    - use icons from https://mods.factorio.com/mod/recipe-icons-improvement-for-esir?from=updated
+  - assembling machine
+    - used for buildings and logistics
+  - manufacturer
+    - used for material -> intermediate processing like welding, milling, ...
+  - more solar panels
+    - basic solar panels contain
+      - diodes
+    - intermatie solar panels contains
+      - photovoltaic cell
+    - make graphics using icon of this mod https://mods.factorio.com/mod/Tiny_Solar?from=updated
+    - see https://mods.factorio.com/mod/SolarMatrix
+  - accumulator
+    - https://mods.factorio.com/mod/Accumulator-V2
+  - Water turbine
+  - other buildings
+    - assemblers: https://mods.factorio.com/mod/Assembler-Reskin
+      - used for combined functionality of assembling machines. Some recipes take in materials and intermediates like thruster. 
+
 Rename items
 - ceramics
+- plate heat exchanger to heat exchanger plates
+
+Recipe changes
+  - use sets wherever possible (see usecases of their ingredients)
+    - mechanical components set
+    - structural components set
+    - fluid handling components set
+    - electronic components set
+    - production components set
 
 Recipe chains
   - add borax when extracting from kernite
@@ -51,12 +87,15 @@ New items
 
   - chemistry
     - (i) polyvinyl chloride = vinyl chloride (extend vinyl chloride tech)
-
     - organometallic compounds
     - ionic liquids
     - super acids
     - super bases
     - reducing agents
+
+  - scaffolding
+  - soils as module for organic buildings
+    - use different fertilizers for creating higher quality soils
   - electrostatic-precipitator
   - destiller
   - thermal-regulator
@@ -65,6 +104,9 @@ New items
   - voltage filter
   - voltage regulator
   - potentiometer
+  - armor plates
+  - empty advanced circuit board
+  - advanced circuit board
   - Semiconductors
     - photoacid-generator
     - wafer
@@ -72,17 +114,36 @@ New items
   - control-linkage - connects circuits to mechanical systems
 - Add more cryostabalized alloys for metals that exist as powder
 
-New Icons
+Fix Icons
 - cubit
+- combustion-chamber
+- rocket-nozzle (maybe just rotate 45° and perspective correction)
+- rocket-engine (maybe just rotate 45° and perspective correction)
+- reactor-core
+- ion thruster (maybe just rotate 45°)
+- empty-circuit-board -> make it blue
+- circuit-board -> make it blue
+- bio-sample-cryovial -> just cut off the bottom part and make heatsink shorter
+- casting icons
+- consistent fluid icon categories
+  - lubricant
+  - solution
+  - fuel
+  - gas
+
+
+Mod support
+- AII industries
+- Text Plates
+- LTN
 
 Mod split
 - move alien stuff into different mod
 
 fixes
-- fix casting icons
 - fix pipe entries in hurricane buildings
 
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 TODO for 0.3.26
   - Fix noble gases recipe chain

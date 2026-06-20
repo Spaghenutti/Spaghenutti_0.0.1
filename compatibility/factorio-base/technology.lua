@@ -246,20 +246,19 @@ data.raw.technology["logistics-3"].unit.ingredients = {
   {"electromagnetic-science-pack", 1}
 }
 
-table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
 table.insert(data.raw.technology["railway"].prerequisites, "sp-geological-science-pack-1")
-data.raw.technology["nuclear-power"].effects = {
+data.raw.technology["railway"].effects = {
   {
     type = "unlock-recipe",
-    recipe = "sp-rail"
+    recipe = "rail"
   },
   {
     type = "unlock-recipe",
-    recipe = "sp-locomotive"
+    recipe = "locomotive"
   },
   {
     type = "unlock-recipe",
-    recipe = "sp-cargo-wagon"
+    recipe = "cargo-wagon"
   },
   {
     type = "unlock-recipe",
@@ -268,6 +267,10 @@ data.raw.technology["nuclear-power"].effects = {
   {
     type = "unlock-recipe",
     recipe = "sp-shaft-sleeve"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-steel-wheel"
   },
 }
 data.raw.technology["railway"].unit.ingredients = {
@@ -583,9 +586,9 @@ data.raw.technology["lubricant"].unit.ingredients = {
 -- "car"
 table.insert(data.raw.technology["automobilism"].effects, {type = "unlock-recipe", recipe = "sp-differential"})
 table.insert(data.raw.technology["automobilism"].effects, {type = "unlock-recipe", recipe = "sp-coupling"})
+table.insert(data.raw.technology["automobilism"].effects, {type = "unlock-recipe", recipe = "sp-steel-wheel"})
 data.raw.technology["automobilism"].prerequisites = {
   "sp-rubber",
-  "sp-steel-wheel",
   "lubricant"
 }
 data.raw.technology["automobilism"].unit.ingredients = {

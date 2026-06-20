@@ -7443,27 +7443,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-steel-wheel",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/wheel.png",
-    effects = {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-steel-wheel"
-      },
-    },
-    prerequisites = {"logistic-science-pack"},
-    unit = {
-      count = 100,
-      ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
     name = "sp-control-unit",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/control-unit.png",

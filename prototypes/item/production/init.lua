@@ -1,3 +1,4 @@
+require("agriculture")
 require("energy")
 require("extraction-machine")
 require("smelting-machine")
